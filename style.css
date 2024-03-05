@@ -447,7 +447,7 @@ input{
 
 /* ---------------------------------------GUIDE PAGE----------------------- */
 .guidebanner{
-    background-color: var(--clr-dark);
+    background-color: var(--clr-light);
     padding-top: 20rem;
     padding-bottom: 20rem;
     position: relative;
@@ -468,13 +468,41 @@ input{
     color: var(--clr-gray);
     font-family: var(--font-secondary);
     margin-bottom: 2rem;
+    width: 50rem;
 }
 .guidebanner__title p{
     color: var(--clr-gray);
+    margin-top: 8rem;
 }
 .guidebanner__title{
-    display: grid;
-    grid-template-columns: 50rem -50rem;
+    display: flex;
+    justify-content: space-between;
+}
+.guidebanner__cook span:nth-child():before{
+    display: inline-block;
+    position: relative;
+    content: " ";
+    background-color: var(--clr-gray);
+    width: 140rem;
+    height: .2rem;
+    bottom: .5rem;   
+}
+.guidebanner__cook ul{
+    display: flex;
+    justify-content: space-between;
+    color: var(--clr-gray);
+}
+span:after{
+    display: inline-block;
+    position: relative;
+    content: " ";
+    background-color: var(--clr-gray);
+    width: 140rem;
+    height: .2rem;
+    bottom: .5rem;   
+}
+ul li, p{
+ display: flex;
 }
 
 /* ---------------------------------REPEATABLE PATTERNS--------------------  */
